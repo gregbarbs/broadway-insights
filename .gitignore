@@ -1,0 +1,52 @@
+# === Python-specific ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# === Virtual environments ===
+.venv/
+venv/
+ENV/
+env/
+
+# === Jupyter Notebooks ===
+.ipynb_checkpoints/
+
+# === Model artifacts ===
+*.pkl
+*.joblib
+*.h5
+*.pt
+
+# === Logs and outputs ===
+*.log
+*.out
+*.tmp
+
+# === System files ===
+.DS_Store
+Thumbs.db
+
+# === IDEs ===
+.vscode/
+.idea/
+
+# === Environment files ===
+.env
+.env.*
+
+# === Database files ===
+*.sqlite
+*.db
+*.sql
+*.bak
+
+# === Git ===
+.git/
+*.swp
