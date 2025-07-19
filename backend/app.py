@@ -20,7 +20,7 @@ model = model_bundle["model"]
 r2_score_val = model_bundle["r2_score"]
 residual_std = model_bundle["residual_std"]
 
-# ✅ Configure logging
+# Configure logging
 logging.basicConfig(
     filename='logs.txt',
     level=logging.INFO,
@@ -40,7 +40,7 @@ def predict():
     try:
         data = request.get_json()
 
-        # ✅ Parse and sanitize input
+        # Parse and sanitize input
         input_df = pd.DataFrame([{
             "WeeklyAttendance": float(data["attendance"]),
             "CapacityFilled": float(data["capacity"]),
@@ -55,7 +55,7 @@ def predict():
         lower = round(prediction - margin, 2)
         upper = round(prediction + margin, 2)
 
-        # ✅ Log the successful request
+        # Log the successful request
         logging.info(f"Prediction request: {data} | Prediction: {round(prediction, 2)}")
 
         os.makedirs("backend/logs", exist_ok=True)
@@ -73,7 +73,7 @@ def predict():
         })
 
     except Exception as e:
-        # ✅ Log any failure
+        # Log any failure
         logging.error(f"Prediction failed: {e} | Data: {request.get_json()}")
         return jsonify({"error": str(e)}), 400
 
