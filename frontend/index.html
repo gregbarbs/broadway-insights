@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Broadway Gross Predictor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, label {
+      display: block;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Broadway Weekly Gross Predictor</h2>
+
+  <form id="predict-form">
+    <label for="attendance">Weekly Attendance:</label>
+    <input type="number" id="attendance" name="attendance" required>
+
+    <label for="capacity">Capacity Filled (%):</label>
+    <input type="number" step="0.1" id="capacity" name="capacity" required>
+
+    <label for="potential">Gross Potential (%):</label>
+    <input type="number" step="0.1" id="potential" name="potential" required>
+
+    <label for="shows">Number of Performances:</label>
+    <input type="number" id="shows" name="shows" required>
+
+    <button type="submit">Predict Gross</button>
+  </form>
+
+  <div id="result" style="margin-top: 20px; font-size: 1.25rem;"></div>
+
+  <script>
+    document.getElementById("predict-form").addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const data = {
+        attendance: parseInt(document.getElementById("attendance").value),
+        capacity: parseFloat(document.getElementById("capacity").value),
+        potential: parseFloat(document.getElementById("potential").value),
+        shows: parseInt(document.getElementById("shows").value)
+      };
+
+      const response = await fetch("http://127.0.0.1:5000/predict", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        document.getElementById("result").innerHTML =
+        `Estimated Gross: $${result.estimated_gross.toLocaleString()}<br>` +
+        `95% Confidence Interval: $${result.confidence_low.toLocaleString()} - $${result.confidence_high.toLocaleString()}<br>` +
+        `Model Accuracy (R²): ${result.r2_score}`;}
+        else {
+        document.getElementById("result").textContent = `Error: ${result.error}`;}
+    });
+  </script>
+
+</body>
+
+<footer>
+  <p style="text-align:center;">
+  <a href="/visuals" target="_blank">View Project Visualizations</a>
+</p>
+</footer>
+</html>
