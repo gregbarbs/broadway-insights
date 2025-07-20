@@ -70,3 +70,16 @@
 2025-07-19 18:16:27,929 - 127.0.0.1 - - [19/Jul/2025 18:16:27] "[36mGET /static/gross_by_showtype.png HTTP/1.1[0m" 304 -
 2025-07-19 18:16:27,930 - 127.0.0.1 - - [19/Jul/2025 18:16:27] "[36mGET /static/attendance_vs_gross.png HTTP/1.1[0m" 304 -
 2025-07-19 18:16:27,930 - 127.0.0.1 - - [19/Jul/2025 18:16:27] "[36mGET /static/predictions_vs_actuals.png HTTP/1.1[0m" 304 -
+2025-07-19 19:55:47,584 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-19 19:55:47,584 - [33mPress CTRL+C to quit[0m
+2025-07-19 19:55:47,585 -  * Restarting with stat
+2025-07-19 19:55:48,788 -  * Debugger is active!
+2025-07-19 19:55:48,798 -  * Debugger PIN: 697-992-909
+2025-07-19 19:55:54,604 - 127.0.0.1 - - [19/Jul/2025 19:55:54] "GET / HTTP/1.1" 200 -
+2025-07-19 19:56:05,406 - Prediction request: {'attendance': 10000, 'capacity': 84, 'potential': 98, 'shows': 7} | Prediction: 996749.69
+2025-07-19 19:56:05,407 - 127.0.0.1 - - [19/Jul/2025 19:56:05] "POST /predict HTTP/1.1" 200 -
+2025-07-19 19:56:10,455 - 127.0.0.1 - - [19/Jul/2025 19:56:10] "[36mGET /visuals HTTP/1.1[0m" 304 -
+2025-07-19 19:56:10,481 - 127.0.0.1 - - [19/Jul/2025 19:56:10] "[36mGET /static/attendance_vs_gross.png HTTP/1.1[0m" 304 -
+2025-07-19 19:56:10,484 - 127.0.0.1 - - [19/Jul/2025 19:56:10] "[36mGET /static/gross_by_showtype.png HTTP/1.1[0m" 304 -
+2025-07-19 19:56:10,488 - 127.0.0.1 - - [19/Jul/2025 19:56:10] "[36mGET /static/predictions_vs_actuals.png HTTP/1.1[0m" 304 -

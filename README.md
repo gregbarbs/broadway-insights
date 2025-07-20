@@ -28,3 +28,8 @@ Below each step are the commands to run in your local machine's terminal.
 6. **Open the dashboard in your browser**  
         Open your browser and navigate to http://127.0.0.1:5000  
         Use the online form to enter your data you'd like to test. 
+
+### ADVANCED
+To run everything with one command on Unix/macOS: "bash run_app.sh"  
+To run everything with one command on Windows: "run_app.bat"
+> This will set up the environment, install requirements, train the model, and launch the app.
