@@ -3,7 +3,7 @@
 This application predicts the weekly gross revenue of a Broadway show based on key inputs like attendance and show capacity.
 
 ### Requirements
-- Python 3.9+
+- Python 3.10+
 - Internet connection (for package install)
 - No database setup required (data is run from an already embedded .csv file)
 
@@ -30,6 +30,7 @@ Below each step are the commands to run in your local machine's terminal.
         Use the online form to enter your data you'd like to test. 
 
 ### ADVANCED
-To run everything with one command on Unix/macOS: "bash run_app.sh"  
-To run everything with one command on Windows: "run_app.bat"
+To run everything the entire project on Unix/macOS: Double-click on "bash run_app.sh"  
+To run everything the entire project on Windows: Double-click on "run_app.bat"  
+After running the appropriate scripts, navigate to http://127.0.0.1:5000  
 > This will set up the environment, install requirements, train the model, and launch the app.
