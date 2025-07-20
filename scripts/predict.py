@@ -4,7 +4,7 @@ import pandas as pd
 
 def predict_gross(attendance, capacity, potential, shows):
     # Load model
-    model = joblib.load("models/saved/linear_regression_model.pkl")
+    model = joblib.load("../models/saved/linear_regression_model.pkl")
 
     # Wrap input as DataFrame
     input_data = pd.DataFrame([{

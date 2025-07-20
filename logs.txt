@@ -97,3 +97,91 @@
 2025-07-20 17:34:29,433 - 127.0.0.1 - - [20/Jul/2025 17:34:29] "GET / HTTP/1.1" 200 -
 2025-07-20 17:34:43,111 - Prediction request: {'attendance': 10000, 'capacity': 85, 'potential': 95, 'shows': 8} | Prediction: 978265.31
 2025-07-20 17:34:43,113 - 127.0.0.1 - - [20/Jul/2025 17:34:43] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:09:48,343 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-20 19:09:48,344 - [33mPress CTRL+C to quit[0m
+2025-07-20 19:09:48,345 -  * Restarting with stat
+2025-07-20 19:09:49,679 -  * Debugger is active!
+2025-07-20 19:09:49,690 -  * Debugger PIN: 697-992-909
+2025-07-20 19:09:53,009 - 127.0.0.1 - - [20/Jul/2025 19:09:53] "[36mGET / HTTP/1.1[0m" 304 -
+2025-07-20 19:10:02,753 - Prediction request: {'attendance': 12001, 'capacity': 92, 'potential': 95, 'shows': 8} | Prediction: 1124089.26
+2025-07-20 19:10:02,756 - 127.0.0.1 - - [20/Jul/2025 19:10:02] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:10:05,730 - 127.0.0.1 - - [20/Jul/2025 19:10:05] "[36mGET /visuals HTTP/1.1[0m" 304 -
+2025-07-20 19:10:05,745 - 127.0.0.1 - - [20/Jul/2025 19:10:05] "[36mGET /static/attendance_vs_gross.png HTTP/1.1[0m" 304 -
+2025-07-20 19:10:05,748 - 127.0.0.1 - - [20/Jul/2025 19:10:05] "[36mGET /static/gross_by_showtype.png HTTP/1.1[0m" 304 -
+2025-07-20 19:10:05,750 - 127.0.0.1 - - [20/Jul/2025 19:10:05] "[36mGET /static/predictions_vs_actuals.png HTTP/1.1[0m" 304 -
+2025-07-20 19:10:10,860 - Prediction request: {'attendance': 12000, 'capacity': 92, 'potential': 95, 'shows': 8} | Prediction: 1124012.42
+2025-07-20 19:10:10,864 - 127.0.0.1 - - [20/Jul/2025 19:10:10] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:10:14,022 - Prediction request: {'attendance': 12001, 'capacity': 92, 'potential': 95, 'shows': 8} | Prediction: 1124089.26
+2025-07-20 19:10:14,023 - 127.0.0.1 - - [20/Jul/2025 19:10:14] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:10:20,003 - Prediction request: {'attendance': 12008, 'capacity': 92, 'potential': 95, 'shows': 8} | Prediction: 1124627.17
+2025-07-20 19:10:20,010 - 127.0.0.1 - - [20/Jul/2025 19:10:20] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:10:30,228 - 127.0.0.1 - - [20/Jul/2025 19:10:30] "[36mGET /visuals HTTP/1.1[0m" 304 -
+2025-07-20 19:10:30,240 - 127.0.0.1 - - [20/Jul/2025 19:10:30] "[36mGET /static/attendance_vs_gross.png HTTP/1.1[0m" 304 -
+2025-07-20 19:10:30,243 - 127.0.0.1 - - [20/Jul/2025 19:10:30] "[36mGET /static/gross_by_showtype.png HTTP/1.1[0m" 304 -
+2025-07-20 19:10:30,246 - 127.0.0.1 - - [20/Jul/2025 19:10:30] "[36mGET /static/predictions_vs_actuals.png HTTP/1.1[0m" 304 -
+2025-07-20 19:11:13,571 - 127.0.0.1 - - [20/Jul/2025 19:11:13] "[36mGET / HTTP/1.1[0m" 304 -
+2025-07-20 19:12:06,722 - 127.0.0.1 - - [20/Jul/2025 19:12:06] "GET / HTTP/1.1" 200 -
+2025-07-20 19:12:39,698 - 127.0.0.1 - - [20/Jul/2025 19:12:39] "GET / HTTP/1.1" 200 -
+2025-07-20 19:12:56,116 - 127.0.0.1 - - [20/Jul/2025 19:12:56] "GET / HTTP/1.1" 200 -
+2025-07-20 19:13:19,828 - Prediction request: {'attendance': 2000, 'capacity': 65, 'potential': 30, 'shows': 8} | Prediction: -30375.43
+2025-07-20 19:13:19,831 - 127.0.0.1 - - [20/Jul/2025 19:13:19] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:13:23,105 - Prediction request: {'attendance': 2000, 'capacity': 65, 'potential': 60, 'shows': 8} | Prediction: 161891.42
+2025-07-20 19:13:23,107 - 127.0.0.1 - - [20/Jul/2025 19:13:23] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:14:28,639 - 127.0.0.1 - - [20/Jul/2025 19:14:28] "GET / HTTP/1.1" 200 -
+2025-07-20 19:16:06,562 - 127.0.0.1 - - [20/Jul/2025 19:16:06] "GET / HTTP/1.1" 200 -
+2025-07-20 19:16:47,084 - 127.0.0.1 - - [20/Jul/2025 19:16:47] "GET / HTTP/1.1" 200 -
+2025-07-20 19:17:02,623 - Prediction request: {'attendance': 12500, 'capacity': 49, 'potential': 60, 'shows': 8} | Prediction: 986896.35
+2025-07-20 19:17:02,627 - 127.0.0.1 - - [20/Jul/2025 19:17:02] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:18:18,474 - 127.0.0.1 - - [20/Jul/2025 19:18:18] "[36mGET /visuals HTTP/1.1[0m" 304 -
+2025-07-20 19:18:18,493 - 127.0.0.1 - - [20/Jul/2025 19:18:18] "[36mGET /static/gross_by_showtype.png HTTP/1.1[0m" 304 -
+2025-07-20 19:18:18,496 - 127.0.0.1 - - [20/Jul/2025 19:18:18] "[36mGET /static/attendance_vs_gross.png HTTP/1.1[0m" 304 -
+2025-07-20 19:18:18,497 - 127.0.0.1 - - [20/Jul/2025 19:18:18] "[36mGET /static/predictions_vs_actuals.png HTTP/1.1[0m" 304 -
+2025-07-20 19:18:27,370 - 127.0.0.1 - - [20/Jul/2025 19:18:27] "[36mGET /visuals HTTP/1.1[0m" 304 -
+2025-07-20 19:18:27,385 - 127.0.0.1 - - [20/Jul/2025 19:18:27] "[36mGET /static/attendance_vs_gross.png HTTP/1.1[0m" 304 -
+2025-07-20 19:18:27,388 - 127.0.0.1 - - [20/Jul/2025 19:18:27] "[36mGET /static/predictions_vs_actuals.png HTTP/1.1[0m" 304 -
+2025-07-20 19:18:27,389 - 127.0.0.1 - - [20/Jul/2025 19:18:27] "[36mGET /static/gross_by_showtype.png HTTP/1.1[0m" 304 -
+2025-07-20 19:18:29,265 - 127.0.0.1 - - [20/Jul/2025 19:18:29] "GET / HTTP/1.1" 200 -
+2025-07-20 19:19:15,800 - Prediction request: {'attendance': 12000, 'capacity': 92.7, 'potential': 95, 'shows': 8} | Prediction: 1123218.43
+2025-07-20 19:19:15,804 - 127.0.0.1 - - [20/Jul/2025 19:19:15] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:22:09,177 - 127.0.0.1 - - [20/Jul/2025 19:22:09] "GET / HTTP/1.1" 200 -
+2025-07-20 19:22:30,844 - 127.0.0.1 - - [20/Jul/2025 19:22:30] "GET / HTTP/1.1" 200 -
+2025-07-20 19:24:04,891 - 127.0.0.1 - - [20/Jul/2025 19:24:04] "GET / HTTP/1.1" 200 -
+2025-07-20 19:24:20,825 - Prediction request: {'attendance': 10142, 'capacity': 97.9, 'potential': 99.1, 'shows': 8} | Prediction: 1000821.5
+2025-07-20 19:24:20,828 - 127.0.0.1 - - [20/Jul/2025 19:24:20] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:24:29,662 - Prediction request: {'attendance': 10139, 'capacity': 98, 'potential': 99.7, 'shows': 8} | Prediction: 1004322.88
+2025-07-20 19:24:29,665 - 127.0.0.1 - - [20/Jul/2025 19:24:29] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:24:32,686 - 127.0.0.1 - - [20/Jul/2025 19:24:32] "[36mGET /visuals HTTP/1.1[0m" 304 -
+2025-07-20 19:24:32,703 - 127.0.0.1 - - [20/Jul/2025 19:24:32] "[36mGET /static/gross_by_showtype.png HTTP/1.1[0m" 304 -
+2025-07-20 19:24:32,703 - 127.0.0.1 - - [20/Jul/2025 19:24:32] "[36mGET /static/attendance_vs_gross.png HTTP/1.1[0m" 304 -
+2025-07-20 19:24:32,714 - 127.0.0.1 - - [20/Jul/2025 19:24:32] "[36mGET /static/predictions_vs_actuals.png HTTP/1.1[0m" 304 -
+2025-07-20 19:24:51,582 - Prediction request: {'attendance': 29999, 'capacity': 98, 'potential': 99.7, 'shows': 8} | Prediction: 2530434.58
+2025-07-20 19:24:51,585 - 127.0.0.1 - - [20/Jul/2025 19:24:51] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:25:03,745 - Prediction request: {'attendance': 29999, 'capacity': 98, 'potential': 99.7, 'shows': 8} | Prediction: 2530434.58
+2025-07-20 19:25:03,748 - 127.0.0.1 - - [20/Jul/2025 19:25:03] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:25:05,247 - Prediction request: {'attendance': 29999, 'capacity': 98, 'potential': 99.7, 'shows': 8} | Prediction: 2530434.58
+2025-07-20 19:25:05,250 - 127.0.0.1 - - [20/Jul/2025 19:25:05] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:25:08,216 - Prediction request: {'attendance': 30000, 'capacity': 98, 'potential': 99.7, 'shows': 8} | Prediction: 2530511.43
+2025-07-20 19:25:08,218 - 127.0.0.1 - - [20/Jul/2025 19:25:08] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:25:11,309 - Prediction request: {'attendance': 30000, 'capacity': 98, 'potential': 99.7, 'shows': 8} | Prediction: 2530511.43
+2025-07-20 19:25:11,313 - 127.0.0.1 - - [20/Jul/2025 19:25:11] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:25:18,539 - Prediction request: {'attendance': 0, 'capacity': 98, 'potential': 99.7, 'shows': 8} | Prediction: 225206.75
+2025-07-20 19:25:18,540 - 127.0.0.1 - - [20/Jul/2025 19:25:18] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:25:30,788 - Prediction request: {'attendance': 0, 'capacity': 0, 'potential': 0, 'shows': 8} | Prediction: -302601.86
+2025-07-20 19:25:30,791 - 127.0.0.1 - - [20/Jul/2025 19:25:30] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:25:35,217 - Prediction request: {'attendance': 0, 'capacity': 0, 'potential': 0, 'shows': 8} | Prediction: -302601.86
+2025-07-20 19:25:35,220 - 127.0.0.1 - - [20/Jul/2025 19:25:35] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:45:34,394 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-20 19:45:34,394 - [33mPress CTRL+C to quit[0m
+2025-07-20 19:45:34,395 -  * Restarting with stat
+2025-07-20 19:45:35,833 -  * Debugger is active!
+2025-07-20 19:45:35,843 -  * Debugger PIN: 697-992-909
+2025-07-20 19:45:40,849 - 127.0.0.1 - - [20/Jul/2025 19:45:40] "GET / HTTP/1.1" 200 -
+2025-07-20 19:45:42,528 - 127.0.0.1 - - [20/Jul/2025 19:45:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-20 19:45:51,362 - Prediction request: {'attendance': 20000, 'capacity': 99, 'potential': 102, 'shows': 8} | Prediction: 1775682.72
+2025-07-20 19:45:51,365 - 127.0.0.1 - - [20/Jul/2025 19:45:51] "POST /predict HTTP/1.1" 200 -
+2025-07-20 19:45:53,396 - 127.0.0.1 - - [20/Jul/2025 19:45:53] "GET /visuals HTTP/1.1" 200 -
+2025-07-20 19:45:53,408 - 127.0.0.1 - - [20/Jul/2025 19:45:53] "[36mGET /static/attendance_vs_gross.png HTTP/1.1[0m" 304 -
+2025-07-20 19:45:53,412 - 127.0.0.1 - - [20/Jul/2025 19:45:53] "[36mGET /static/predictions_vs_actuals.png HTTP/1.1[0m" 304 -
+2025-07-20 19:45:53,412 - 127.0.0.1 - - [20/Jul/2025 19:45:53] "[36mGET /static/gross_by_showtype.png HTTP/1.1[0m" 304 -

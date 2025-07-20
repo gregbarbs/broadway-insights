@@ -27,7 +27,7 @@ logging.basicConfig(
     format='%(asctime)s - %(message)s',
 )
 
-@app.route('/')
+@app.route("/")
 def index():
     return send_from_directory("../frontend", "index.html")
 
